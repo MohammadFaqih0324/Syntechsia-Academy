@@ -1,21 +1,16 @@
-import java.util.Scanner;
-
-    public class ChallangeConstructor {
-
+public class ChallangeConstructor {
         public static void main(String[] args) {
 
-            String input;
-            Scanner inputUser = new Scanner(System.in);
-            input = inputUser.next();
+            String brand = "lenovo";
 
-            if (input.equalsIgnoreCase("asus")){
+            if (brand.equalsIgnoreCase("asus")){
                 Brand brand1 = new Brand("ASUS");
                 brand1.laptopBrand = "ASUS";
                 Specification specification1 = new Specification("FX 505 DT", "AMD Ryzen 5");
                 Specification specification2 = new Specification(5, 500);
                 System.out.println("I have laptop " + brand1.laptopBrand + ", type " + specification1.type + ", processor " + specification1.processor + ", RAM " + specification2.ram + ", Storage " + specification2.storage);
 
-            } else if (input.equalsIgnoreCase("lenovo")){
+            } else if (brand.equalsIgnoreCase("lenovo")){
                 Brand brand2 = new Brand("LENOVO");
                 brand2.laptopBrand = "LENOVO";
                 Specification specification3 = new Specification("ThinkPad X13 Yoga", "Intel Evo");
