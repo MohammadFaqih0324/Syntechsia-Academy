@@ -1,5 +1,4 @@
 public class Kendaraan {
-
         public static void main(String[] args) {
 
             Mobil mobil = new Kendaraan.Mobil();
@@ -13,24 +12,23 @@ public class Kendaraan {
 
             // get value property + method
             System.out.println("================MOBIL================");
-            System.out.println("Merk mobil saya   : " + mobil.merkMobil);   // -> concat
-            System.out.println("Varian mobil saya : " + mobil.varianMobil);
+            System.out.println("Merk mobil saya   : " .concat(mobil.merkMobil));   // -> concat
+            System.out.println("Varian mobil saya : " .concat(mobil.varianMobil));
             System.out.println("\n");
             mobil.maju();
             mobil.mundur();
-            System.out.println("Mobil : " + mobil.kiri());
-            System.out.println("Mobil : " + mobil.kanan());
+            System.out.println("Mobil : " .concat(mobil.kiri()));
+            System.out.println("Mobil : " .concat(mobil.kanan()));
             System.out.println("\n");
 
             System.out.println("================MOTOR================");
-            System.out.println("Merk motor saya   : " + motor.merkMotor);
-            System.out.println("Varian motor saya : " + motor.varianMotor);
+            System.out.println("Merk motor saya   : " .concat(motor.merkMotor));
+            System.out.println("Varian motor saya : " .concat(motor.varianMotor));
             System.out.println("\n");
             motor.maju();
             motor.mundur();
-            System.out.println("Motor : " + motor.kiri());
-            System.out.println("Motor : " + motor.kanan());
-
+            System.out.println("Motor : " .concat(motor.kiri()));
+            System.out.println("Motor : " .concat(motor.kanan()));
         }
 
         static class Mobil{
@@ -54,7 +52,6 @@ public class Kendaraan {
             String kanan(){
                 return "Belok kanan...";
             }
-
         }
 
         static class Motor{
